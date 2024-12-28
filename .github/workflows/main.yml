@@ -33,9 +33,3 @@ jobs:
         with:
           branch: gh-pages
           folder: .vuepress/dist
-
-      - name: Refresh CDN
-        run: npm run deoply:refresh-cdn
-        env:
-          CDN_ID: ${{ secrets.CDN_ID }}
-          CDN_KEY: ${{ secrets.CDN_KEY }}
